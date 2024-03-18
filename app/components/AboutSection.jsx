@@ -44,7 +44,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Begining Ubuntu Server Administrator</li>
-        <li>Ai Lab</li>
+        <li>Artificial Intelligence: AI</li>
         <li>Hands-on with python programming labs</li>
       </ul>
     ),
