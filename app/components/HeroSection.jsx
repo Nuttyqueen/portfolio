@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import Modal from "./Modal";
 
 export const HeroSection = () => {
+  const [open, setOpen] = useState(false);
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -16,12 +18,10 @@ export const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 "Siripat",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000, 
                 "jirajerangchai",
                 1000,
                 "Web Developer",
-                1000,
-                "UI/UX Designer",
                 1000,
               ]}
               wrapper="span"
@@ -30,18 +30,23 @@ export const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-            aspernatur.
+          I&apos;m ready to utilize my creativity and programming skills to develop something new.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-500 hover:bg-slate-200 text-white">
+            <button
+              onClick={() => setOpen(true)}
+              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-500 hover:bg-slate-200 text-white"
+            >
               Hire me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-500 hover:bg-slate-800 text-white  mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Dowload CV
-              </span>
-            </button>
+            <Modal open={open} onClose={() => setOpen(false)} />
+            <a href="https://drive.google.com/drive/folders/19uCmeM5RvaBV3_R6-yHJMyuZKNVVik9Q?usp=sharing">
+              <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-500 hover:bg-slate-800 text-white  mt-3">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                  Dowload CV
+                </span>
+              </button>
+            </a>
           </div>
         </div>
         <div className="col-span-5 place-content-center mt-4 lg:mt-0">
