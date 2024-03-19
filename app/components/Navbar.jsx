@@ -9,10 +9,15 @@ import {
 } from "@heroicons/react/16/solid";
 import MenuOverlay from "./MenuOverlay";
 
-const navLinks = [
-  { title: "About", path: "#about" },
-  { title: "Projects", path: "#projects" },
-  { title: "Contact", path: "#contact" },
+const navLinks  = [
+  {
+    title: "About",
+    path: "#about",
+  },
+  {
+    title: "Projects",
+    path: "#projects",
+  },
 ];
 
 const Navbar = () => {
@@ -23,7 +28,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <CodeBracketIcon className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-white" />
           <Link
-            href="#"
+            href="/"
             className="text-2xl md:text-5xl text-white font-semibold ml-2"
           >
             Dev

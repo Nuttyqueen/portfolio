@@ -11,7 +11,7 @@ const projectsData = [
     description: "Project 1 Chao Phraya Basin water situation",
     image: "/images/w1.png",
     tag: ["All", "REACT"],
-    gitUrl: "/",
+    gitUrl: "http://gitlab.nwcc.go.th/sarawut_an/info3d",
     previewUrl: "https://wapt-dev.onwr.go.th/info/basin/lcpy",
   },
   {
@@ -20,7 +20,7 @@ const projectsData = [
     description: "Project 2 Situation of water resources in the eastern region",
     image: "/images/w2.png",
     tag: ["All", "REACT"],
-    gitUrl: "/",
+    gitUrl: "http://gitlab.nwcc.go.th/sarawut_an/info3d",
     previewUrl: "https://wapt-dev.onwr.go.th/info/water-resource/eec",
   },
   {
@@ -29,7 +29,7 @@ const projectsData = [
     description: "Project 3 Support Service",
     image: "/images/w15.png",
     tag: ["All", "REACT"],
-    gitUrl: "/",
+    gitUrl: "http://gitlab.nwcc.go.th/sarawut_an/support-service",
     previewUrl: "/",
   },
   {
@@ -38,7 +38,7 @@ const projectsData = [
     description: "Project 4 Reserve a vehicle",
     image: "/images/w3.png",
     tag: ["All", "LARAVEL"],
-    gitUrl: "/",
+    gitUrl: "http://gitlab.nwcc.go.th/sarawut_an/car-booking",
     previewUrl: "https://car-booking.onwr.go.th/admin/login",
   },
   {
@@ -47,7 +47,7 @@ const projectsData = [
     description: "Project 5 Reserve a meeting room",
     image: "/images/w4.png",
     tag: ["All", "LARAVEL"],
-    gitUrl: "/",
+    gitUrl: "http://gitlab.nwcc.go.th/sarawut_an/e-meeting-v2",
     previewUrl: "https://meeting.onwr.go.th/login",
   },
   {
@@ -57,7 +57,7 @@ const projectsData = [
       "Project 6 Meeting room booking support system for administrators",
     image: "/images/w5.png",
     tag: ["All", "LARAVEL"],
-    gitUrl: "/",
+    gitUrl: "http://gitlab.nwcc.go.th/sarawut_an/conference",
     previewUrl: "https://e-meeting.onwr.go.th/",
   },
   {
@@ -66,7 +66,7 @@ const projectsData = [
     description: "Project 7 Manage computer equipment",
     image: "/images/w6.png",
     tag: ["All", "LARAVEL"],
-    gitUrl: "/",
+    gitUrl: "http://gitlab.nwcc.go.th/sarawut_an/asset",
     previewUrl: "https://ict-asset.onwr.go.th/login",
   },
   {
@@ -75,7 +75,7 @@ const projectsData = [
     description: "Project 8 Water management card",
     image: "/images/w7.png",
     tag: ["All", "LARAVEL"],
-    gitUrl: "/",
+    gitUrl: "http://gitlab.nwcc.go.th/sarawut_an/water-card",
     previewUrl: "/",
   },
   {
@@ -167,6 +167,7 @@ const ProjectsSection = () => {
 
   return (
     <>
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 ">
         My Projects
       </h2>
@@ -209,6 +210,7 @@ const ProjectsSection = () => {
           />
         ))}
       </div>
+      </section>
     </>
   );
 };
