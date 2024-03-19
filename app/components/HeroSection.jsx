@@ -18,12 +18,10 @@ export const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 "Siripat",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000, 
                 "jirajerangchai",
                 1000,
                 "Web Developer",
-                1000,
-                "UI/UX Designer",
                 1000,
               ]}
               wrapper="span"
@@ -32,8 +30,7 @@ export const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-            aspernatur.
+          I&apos;m ready to utilize my creativity and programming skills to develop something new.
           </p>
           <div>
             <button

@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+;
 
 const TAB_DATA = [
   {
@@ -62,17 +63,18 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-white" id="about" >
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-18">
         <Image src="/images/work5.jpg" alt="work" width={600} height={600} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Aspiring to secure a challenging senior programming role, where I
-            can leverage my extensive expertise and experience to efficiently
-            lead the development of complex projects with a commitment to
-            excellence. Eager to contribute my knowledge and skills to enhance
-            organizational productivity and deliver high-quality results.
+          With three years of hands-on programming experience, 
+          specializing in internal systems, I&apos;m driven to seek new 
+          challenges and professional growth. Ready to expand my skills,
+          I&apos;m eager to master new languages and embrace fresh experiences. 
+          My commitment to learning and passion for impactful solutions motivate
+          me to excel in this dynamic field. Let&apos;s embark on this journey of growth together.
           </p>
           <div className="flex flex-row mt-8 justify-start lg:text-xl">
             <TabButton
